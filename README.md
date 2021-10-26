@@ -23,7 +23,7 @@ for i in range(183):
 ```
 2.Previous day approach :
 
-```
+```python
 df['PreviousDay_Binary']=0
 for i in range(183):
     try:
@@ -36,14 +36,14 @@ and then Mapping labels to (0 and 1).
 B) Percentage Change technique:
 
 1.Same day approach :
-```
+```python
 df['SameDay_Percentage']=0.0
 for i in range(183):
     df['SameDay_Percentage'][i]=((df['Close/Last'][i]-df['Open'][i])/df['Open'][i])*100
 ```
 2.Previous day percentage :
 
-```
+```python
 df['PreviousDay_Percentage']=0.0
 for i in range(183):
     try:

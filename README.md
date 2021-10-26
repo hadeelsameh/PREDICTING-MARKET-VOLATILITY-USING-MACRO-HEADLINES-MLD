@@ -14,7 +14,9 @@ filling null values.Afterthat, splitting date colume into (day,month,year) numer
 ### Labelng:
 A) For Binary classification:
 1.Same Day approch:
-```
+
+
+```python
 df['SameDay_Binary']=0
 for i in range(183):
     df['SameDay_Binary'][i]=int(np.sign(df['Close/Last'][i]-df['Open'][i]))
